@@ -28,7 +28,7 @@ class Mydassboard extends StatelessWidget {
     
      ),
     body:   Row(
-      mainAxisAlignment: MainAxisAlignment.center,
+     
        children: [
         
         Container(
@@ -46,12 +46,15 @@ class Mydassboard extends StatelessWidget {
          height: 100,
          color: Color.fromARGB(255, 30, 59, 155),
         ),
-       Container(
+
+        Expanded(child: Container(
          width: 50, 
          height: 100,
          color: Color.fromARGB(255, 149, 160, 196),
-        ),
+        ),)
+       
        ],
+       
 
     ),
 
