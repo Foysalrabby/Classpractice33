@@ -41,11 +41,11 @@ class Mydassboard extends StatelessWidget {
          height: 100,
          color: Color.fromARGB(255, 50, 201, 50),
         ),
-        Container(
+        Expanded(child: Container(
          width: 50, 
          height: 100,
-         color: Color.fromARGB(255, 30, 59, 155),
-        ),
+         color: Color.fromARGB(255, 5, 54, 212),
+        ),),
 
         Expanded(child: Container(
          width: 50, 
