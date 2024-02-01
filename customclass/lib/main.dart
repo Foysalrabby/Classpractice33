@@ -29,7 +29,19 @@ class Mydassboard extends StatelessWidget {
      ),
     body: Container(
 
-      color: Colors.black,
+      color: const Color.fromARGB(255, 221, 198, 198),
+    
+      child: Center(
+       child: Container(
+       width: 200,
+       height: 200,
+       color: Colors.red,
+
+       ),
+             
+      ),
+
+      
     ),
 
    );
