@@ -27,37 +27,37 @@ class Mydassboard extends StatelessWidget {
       title: Text("Dashboard"),
     
      ),
-    body:   Row(
+    body:Column(
      
        children: [
          ///total flex 9
          Expanded(
-          flex: 2,
+        
           child: Container(
-         width: 50, 
+     
          height: 100,
          color: Color.fromARGB(255, 168, 211, 15),
         ),),
          Expanded(
-          flex: 4,
+         
           child: Container(
-         width: 50, 
+       
          height: 100,
          color: Color.fromARGB(255, 209, 12, 193),
         ),),
         Expanded
         (
-          flex: 2,
+        
           child: Container(
-         width: 50, 
+  
          height: 100,
          color: Color.fromARGB(255, 5, 54, 212),
         ),),
 
         Expanded(
-          flex: 1,
+       
           child: Container(
-         width: 50, 
+         
          height: 100,
          color: Color.fromARGB(255, 149, 160, 196),
         ),)
