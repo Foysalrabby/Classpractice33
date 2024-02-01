@@ -43,7 +43,9 @@ class Mydassboard extends StatelessWidget {
         color: Colors.black,
         ),
         boxShadow: [BoxShadow(
-           blurRadius: 22
+           blurRadius: 22,
+           color: const Color.fromARGB(115, 211, 13, 13),
+           spreadRadius: 12
 
         )],
        ),
