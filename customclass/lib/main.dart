@@ -37,7 +37,7 @@ class Mydassboard extends StatelessWidget {
        height: 200,
        decoration: BoxDecoration(
        color: Color.fromARGB(255, 31, 208, 214), 
-       borderRadius: BorderRadius.circular(60),
+       borderRadius: BorderRadius.only(topLeft: Radius.circular(25),bottomRight:Radius.circular(25) ),
        ),
        
 
