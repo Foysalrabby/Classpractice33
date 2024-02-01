@@ -30,24 +30,33 @@ class Mydassboard extends StatelessWidget {
     body:   Row(
      
        children: [
-        
-        Container(
+         ///total flex 9
+         Expanded(
+          flex: 2,
+          child: Container(
          width: 50, 
          height: 100,
-         color: Colors.amber,
-        ),
-          Container(
+         color: Color.fromARGB(255, 168, 211, 15),
+        ),),
+         Expanded(
+          flex: 4,
+          child: Container(
          width: 50, 
          height: 100,
-         color: Color.fromARGB(255, 50, 201, 50),
-        ),
-        Expanded(child: Container(
+         color: Color.fromARGB(255, 209, 12, 193),
+        ),),
+        Expanded
+        (
+          flex: 2,
+          child: Container(
          width: 50, 
          height: 100,
          color: Color.fromARGB(255, 5, 54, 212),
         ),),
 
-        Expanded(child: Container(
+        Expanded(
+          flex: 1,
+          child: Container(
          width: 50, 
          height: 100,
          color: Color.fromARGB(255, 149, 160, 196),
