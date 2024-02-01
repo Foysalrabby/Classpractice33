@@ -27,35 +27,32 @@ class Mydassboard extends StatelessWidget {
       title: Text("Dashboard"),
     
      ),
-    body: Container(
-
-      color: const Color.fromARGB(255, 221, 198, 198),
-    
-      child: Center(
-       child: Container(
-       width: 200,
-       height: 200,
-       decoration: BoxDecoration(
-       color: Color.fromARGB(255, 31, 208, 214), 
-       borderRadius: BorderRadius.only(topLeft: Radius.circular(50),bottomRight:Radius.circular(50) ),
-       border: Border.all(
-        width: 5,
-        color: Colors.black,
+    body:   Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+       children: [
+        
+        Container(
+         width: 50, 
+         height: 100,
+         color: Colors.amber,
         ),
-        boxShadow: [BoxShadow(
-           blurRadius: 22,
-           color: const Color.fromARGB(115, 211, 13, 13),
-           spreadRadius: 12
+          Container(
+         width: 50, 
+         height: 100,
+         color: Color.fromARGB(255, 50, 201, 50),
+        ),
+        Container(
+         width: 50, 
+         height: 100,
+         color: Color.fromARGB(255, 30, 59, 155),
+        ),
+       Container(
+         width: 50, 
+         height: 100,
+         color: Color.fromARGB(255, 149, 160, 196),
+        ),
+       ],
 
-        )],
-       ),
-       
-
-       ),
-             
-      ),
-
-      
     ),
 
    );
