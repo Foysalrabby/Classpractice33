@@ -36,7 +36,7 @@ class Mydassboard extends StatelessWidget {
       child:Padding(
         padding:EdgeInsets.all(9) ,
         
-        child: Text("hello"),) 
+        child: Text("hello this is rabby",style: TextStyle(fontFamily:"Fontmain",fontWeight: FontWeight.w300 ),),) 
     )
 
    );
