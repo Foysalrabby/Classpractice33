@@ -29,7 +29,7 @@ class Mydassboard extends StatelessWidget {
     
      ),
     body: Padding(
-      padding: EdgeInsets.all(4),
+      padding: EdgeInsets.only(top: 13,left: 12),
       child:Text("hello my name is",style: TextStyle(fontSize: 20),),)
 
    );
