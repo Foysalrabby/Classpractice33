@@ -28,16 +28,11 @@ class Mydassboard extends StatelessWidget {
       title: Text("Dashboard"),
     
      ),
-    body: Container(
-      width: 200,
-      height: 100,
-      margin: EdgeInsets.only(top: 20),
-      color: Colors.blue,
-      child:Padding(
-        padding:EdgeInsets.all(9) ,
-        
-        child: Text("hello this is rabby",style: TextStyle(fontFamily:"Fontmain",fontWeight: FontWeight.w300 ),),) 
-    )
+    body:CircleAvatar(
+      backgroundImage: AssetImage("assets/images/icons8-mic-50.png"),
+      backgroundColor: Colors.blue,
+      
+      )
 
    );
   }
