@@ -7,7 +7,9 @@ void main() {
 class Mycustomizeapp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title:"myfirst app",
       theme: ThemeData(
         primaryColor: Colors.blue
@@ -23,49 +25,12 @@ class Mydassboard extends StatelessWidget {
   Widget build(BuildContext context) {
    return Scaffold(
      appBar: AppBar(
-
       title: Text("Dashboard"),
     
      ),
-    body:Column(
-     
-       children: [
-         ///total flex 9
-         Expanded(
-        
-          child: Container(
-     
-         height: 100,
-         color: Color.fromARGB(255, 168, 211, 15),
-        ),),
-         Expanded(
-         
-          child: Container(
-       
-         height: 100,
-         color: Color.fromARGB(255, 209, 12, 193),
-        ),),
-        Expanded
-        (
-        
-          child: Container(
-  
-         height: 100,
-         color: Color.fromARGB(255, 5, 54, 212),
-        ),),
-
-        Expanded(
-       
-          child: Container(
-         
-         height: 100,
-         color: Color.fromARGB(255, 149, 160, 196),
-        ),)
-       
-       ],
-       
-
-    ),
+    body: Padding(
+      padding: EdgeInsets.all(4),
+      child:Text("hello my name is",style: TextStyle(fontSize: 20),),)
 
    );
   }
