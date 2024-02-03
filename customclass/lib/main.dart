@@ -34,7 +34,9 @@ class Mydassboard extends StatelessWidget {
       margin: EdgeInsets.only(top: 20),
       color: Colors.blue,
       child:Padding(
-        padding:EdgeInsets.all(4) ,) 
+        padding:EdgeInsets.all(9) ,
+        
+        child: Text("hello"),) 
     )
 
    );
