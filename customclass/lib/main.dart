@@ -28,11 +28,27 @@ class Mydassboard extends StatelessWidget {
       title: Text("Dashboard"),
     
      ),
-    body:CircleAvatar(
-      backgroundImage: AssetImage("assets/images/icons8-mic-50.png"),
-      backgroundColor: Colors.blue,
-      
-      )
+    body : CircleAvatar(
+      child:Container(
+         width: 100,
+         height: 100,
+         child: Column(children: [
+            Container(
+              width: 70,
+              height: 70,
+              child:  Image.asset("assets/images/icons8-mic-50.png",),
+            ),
+           
+            Text("data kjhgkdfj")
+          ]),
+
+      ),
+          
+          radius: 70,
+          backgroundColor: Colors.blueAccent,
+        
+
+    )
 
    );
   }
