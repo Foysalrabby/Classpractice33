@@ -9,48 +9,43 @@ class Mycustomizeapp extends StatelessWidget {
   Widget build(BuildContext context) {
     
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title:"myfirst app",
-      theme: ThemeData(
-        primaryColor: Colors.blue
-      ),
-     home: Mydassboard()
-    );
-      //first Mycustomizeapp  run then Mydassboard home page hisabe rakci
+        debugShowCheckedModeBanner: false,
+        title: "myfirst app",
+        theme: ThemeData(primaryColor: Colors.blue),
+        home: Mydassboard());
+    //first Mycustomizeapp  run then Mydassboard home page hisabe rakci
   }
 }
 
 class Mydassboard extends StatelessWidget {
+  var name = ["rabbu", "sima", "rima", "rafi","rabbu", "sima", "rima", "rafi","rabbu", "sima", "rima", "rafi"];
   @override
   Widget build(BuildContext context) {
-   return Scaffold(
-     appBar: AppBar(
-      title: Text("Dashboard"),
-    
-     ),
-    body : CircleAvatar(
-      child:Container(
-         width: 100,
-         height: 100,
-         child: Column(children: [
-            Container(
-              width: 70,
-              height: 70,
-              child:  Image.asset("assets/images/icons8-mic-50.png",),
-            ),
+    return Scaffold(
+        appBar: AppBar(
+          title: Text("Dashboard"),
+        ),
+
+
+        body:ListView.builder(itemBuilder: (context,index){
+          return ListTile(
+            leading: CircleAvatar(
+              child:Container(
+                child:Image.asset("assets/images/icons8-mic-50.png")), 
+              ), 
+                     //use image 1 leading /tiitle/subttile/trailing
+              
+              title: Text(name[index]),
+              subtitle:Text("lorem is good"),
+               trailing: Icon(Icons.add),
            
-            Text("data kjhgkdfj")
-          ]),
-
-      ),
-          
-          radius: 70,
-          backgroundColor: Colors.blueAccent,
+            );
+        },
+        itemCount: name.length ,
         
-
-    )
-
-   );
+        )
+        
+        
+         );
   }
-  
 }
