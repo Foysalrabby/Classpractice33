@@ -7,7 +7,6 @@ void main() {
 class Mycustomizeapp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         title: "myfirst app",
@@ -18,34 +17,48 @@ class Mycustomizeapp extends StatelessWidget {
 }
 
 class Mydassboard extends StatelessWidget {
-  var name = ["rabbu", "sima", "rima", "rafi","rabbu", "sima", "rima", "rafi","rabbu", "sima", "rima", "rafi"];
+  var name = [
+    "rabbu",
+    "sima",
+    "rima",
+    "rafi",
+    "rabbu",
+    "sima",
+    "rima",
+    "rafi",
+    "rabbu",
+    "sima",
+    "rima",
+    "rafi"
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
           title: Text("Dashboard"),
         ),
+        body: ListView.separated(
+          itemBuilder: (context, index) {
+            return ListTile(
+              leading: CircleAvatar(
+                child: Container(
+                    child: Image.asset("assets/images/icons8-mic-50.png")),
+                backgroundColor: Colors.amber,
+              ),
+              //use image 1 leading /tiitle/subttile/trailing
 
-
-        body:ListView.builder(itemBuilder: (context,index){
-          return ListTile(
-            leading: CircleAvatar(
-              child:Container(
-                child:Image.asset("assets/images/icons8-mic-50.png")), 
-              ), 
-                     //use image 1 leading /tiitle/subttile/trailing
-              
               title: Text(name[index]),
-              subtitle:Text("lorem is good"),
-               trailing: Icon(Icons.add),
-           
+              subtitle: Text("lorem is good"),
+              trailing: Icon(Icons.add),
             );
-        },
-        itemCount: name.length ,
-        
-        )
-        
-        
-         );
+          },
+          itemCount: name.length,
+          separatorBuilder: (context, index) {
+            return Divider(
+              height: 20,
+              thickness: 2,
+            );
+          },
+        ));
   }
 }
